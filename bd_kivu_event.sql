@@ -64,3 +64,5 @@ CREATE TABLE utilisateurs (
 ALTER TABLE evenements ADD utilisateur_id INT NOT NULL;
 ALTER TABLE evenements ADD FOREIGN KEY (utilisateur_id) REFERENCES utilisateurs(id) ON DELETE CASCADE;
 ALTER TABLE evenements ADD slug VARCHAR(255) UNIQUE;
+
+-- Test --
