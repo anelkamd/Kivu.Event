@@ -12,7 +12,7 @@ const EventCard = () => {
 
     return (
         <motion.div
-            className="w-90 rounded-2xl bg-white shadow-lg overflow-hidden"
+            className="w-100 rounded-2xl bg-white shadow-lg overflow-hidden"
             variants={cardVariants}
             initial="hidden"
             animate="visible"

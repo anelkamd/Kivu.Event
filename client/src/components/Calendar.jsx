@@ -47,7 +47,7 @@ const Calendar = () => {
 
     return (
         <motion.div
-            className="max-w-xs mx-auto p-3 rounded-xl shadow-lg"
+            className="max-w-auto p-8 rounded-xl shadow-lg"
             whileHover={{ scale: 1.02 }}
         >
             <div className="flex justify-between items-center mb-4">
