@@ -1,33 +1,26 @@
 import { motion } from 'framer-motion';
+import Header from "../components/Header.jsx";
+import EventCard from "../components/EventCard.jsx";
+import Calendar from "../components/Calendar.jsx";
+
 
 const Dashboard = () => {
     return (
-        <div className="flex flex-col w-full h-screen p-6 bg-gray-100 overflow-auto">
+        <div className="flex flex-col w-full h-screen p-2 bg-gray-100 overflow-auto">
             {/* Header Section */}
-            <div className="flex justify-between items-center mb-6">
-                <div className="text-2xl font-bold">Dashboard <span className="wave">👋</span></div>
-                <input
-                    type="text"
-                    placeholder="Search"
-                    className="px-4 py-2 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
+            <div className="mb-6">
+                <Header/>
             </div>
 
             {/* Overview Section */}
-            <div className="grid grid-cols-3 gap-4 mb-6">
-                <motion.div className="p-6 bg-white rounded-lg shadow-md" whileHover={{ scale: 1.05 }}>
-                    <h3 className="text-xl font-semibold">124k</h3>
-                    <p className="text-gray-500">Meetings</p>
-                </motion.div>
-                <motion.div className="p-6 bg-white rounded-lg shadow-md" whileHover={{ scale: 1.05 }}>
-                    <h3 className="text-xl font-semibold">25k</h3>
-                    <p className="text-gray-500">Attended</p>
-                </motion.div>
-                <motion.div className="p-6 bg-white rounded-lg shadow-md" whileHover={{ scale: 1.05 }}>
-                    <h3 className="text-xl font-semibold">10k</h3>
-                    <p className="text-gray-500">Rejected</p>
-                </motion.div>
+            <div className="flex flex-col lg:flex-row gap-6">
+                <div className="flex-2 grid grid-cols-2 md:grid-cols-2 gap-4">
+                    <EventCard/>
+                    <EventCard/>
+                </div>
+                <Calendar/>
             </div>
+
 
             {/* Ongoing Events Section */}
             <div className="mb-6">
