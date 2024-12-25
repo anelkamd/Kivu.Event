@@ -13,11 +13,11 @@ import Parametres from './pages/Parametres';
 const App = () => {
     return (
         <Router>
-            <div className="flex">
+            <div className="flex rounded-2xl">
                 {/* Barre latérale */}
                 <Sidebar />
                 {/* Contenu principal */}
-                <div className="flex-1 bg-gray-100">
+                <div className="flex-1 bg-gray-100 rounded-2xl">
                     <Routes>
                         <Route path="/" element={<Dashboard />} />
                         <Route path="/calendrier" element={<Calendrier />} />
