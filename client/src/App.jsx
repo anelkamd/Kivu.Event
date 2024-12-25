@@ -1,20 +1,35 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
 
-import Home from './pages/Home';
-import Events from './pages/Events';
+// Pages pour chaque route
+import Dashboard from './pages/Dashboard'; // Remplace la version inline par un composant importé
+import Calendrier from './pages/Calendrier'; // Ajoute les pages si elles sont déjà créées
+import Evenements from './pages/Evenements';
+import Programme from './pages/Programme';
+import Chat from './pages/Chat';
+import Parametres from './pages/Parametres';
 
-function App() {
+const App = () => {
     return (
         <Router>
-            <div className="font-sans text-gray-800">
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/events" element={<Events />} />
-                </Routes>
+            <div className="flex">
+                {/* Barre latérale */}
+                <Sidebar />
+                {/* Contenu principal */}
+                <div className="flex-1 bg-gray-100">
+                    <Routes>
+                        <Route path="/" element={<Dashboard />} />
+                        <Route path="/calendrier" element={<Calendrier />} />
+                        <Route path="/evenements" element={<Evenements />} />
+                        <Route path="/programme" element={<Programme />} />
+                        <Route path="/chat" element={<Chat />} />
+                        <Route path="/parametres" element={<Parametres />} />
+                    </Routes>
+                </div>
             </div>
         </Router>
     );
-}
+};
 
 export default App;
