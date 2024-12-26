@@ -72,7 +72,7 @@ const Calendar = () => {
             </div>
 
             <div className="grid grid-cols-7 text-center text-sm text-gray-500 font-medium">
-                {["Lun", "Mar", "Mer", "jeu", "Vend", "Sam", "Dim"].map((day) => (
+                {["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"].map((day) => (
                     <span key={day}>{day}</span>
                 ))}
             </div>
