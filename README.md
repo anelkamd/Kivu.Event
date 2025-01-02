@@ -1,4 +1,4 @@
-# Kivu Event Tools
+# Kivu Event V1.0
 
 <img src="./client/src/assets/logo.png">
 
