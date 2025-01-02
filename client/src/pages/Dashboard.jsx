@@ -16,8 +16,8 @@ const Dashboard = () => {
                 {/* Section des événements */}
                 <div className="flex-1 flex flex-col bg-amber-50 rounded-2xl p-5">
                     <div className="flex justify-between items-center mb-4">
-                        <h3 className="text-lg font-semibold">Ongoing Event</h3>
-                        <button className="text-indigo-500">View All</button>
+                        <h3 className="text-lg font-semibold">Vos Evenement</h3>
+                        <button className="text-indigo-500">Voir tous</button>
                     </div>
 
                     {/* Cartes d'événements */}
