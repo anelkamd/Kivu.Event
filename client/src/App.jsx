@@ -1,10 +1,9 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 
 // Pages pour chaque route
-import Dashboard from './pages/Dashboard'; // Remplace la version inline par un composant importé
-import Calendrier from './pages/Calendrier'; // Ajoute les pages si elles sont déjà créées
+import Dashboard from './pages/Dashboard';
+import Calendrier from './pages/Calendrier';
 import Evenements from './pages/Evenements';
 import Programme from './pages/Programme';
 import Chat from './pages/Chat';
