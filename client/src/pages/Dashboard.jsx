@@ -1,17 +1,9 @@
-import { motion } from 'framer-motion';
 import Header from "../components/Header.jsx";
 import EventCard from "../components/EventCard.jsx";
 import Calendar from "../components/Calendar.jsx";
-import EventCard1 from "../components/EventCard1.jsx";
 
-const participants = [
-    { image: "https://via.placeholder.com/40/FF0000" },
-    { image: "https://via.placeholder.com/40/00FF00" },
-    { image: "https://via.placeholder.com/40/0000FF" },
-    { image: "https://via.placeholder.com/40/FFFF00" },
-    { image: "https://via.placeholder.com/40/FF00FF" },
-    { image: "https://via.placeholder.com/40/00FFFF" },
-];
+
+
 
 const Dashboard = () => {
     return (
