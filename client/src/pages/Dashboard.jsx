@@ -2,7 +2,16 @@ import { motion } from 'framer-motion';
 import Header from "../components/Header.jsx";
 import EventCard from "../components/EventCard.jsx";
 import Calendar from "../components/Calendar.jsx";
+import EventCard1 from "../components/EventCard1.jsx";
 
+const participants = [
+    { image: "https://via.placeholder.com/40/FF0000" },
+    { image: "https://via.placeholder.com/40/00FF00" },
+    { image: "https://via.placeholder.com/40/0000FF" },
+    { image: "https://via.placeholder.com/40/FFFF00" },
+    { image: "https://via.placeholder.com/40/FF00FF" },
+    { image: "https://via.placeholder.com/40/00FFFF" },
+];
 
 const Dashboard = () => {
     return (
@@ -32,39 +41,8 @@ const Dashboard = () => {
             </div>
 
             {/* Upcoming Events Section */}
-            <div className="grid grid-cols-3 gap-4">
-                <div className="col-span-2">
-                    <div className="mb-4">
-                        <h3 className="text-lg font-semibold">Upcoming Events</h3>
-                    </div>
-                    <div className="grid grid-cols-3 gap-4">
-                        <motion.div className="p-4 bg-white rounded-lg shadow-md" whileHover={{scale: 1.03}}>
-                            <h4 className="text-sm font-semibold">18 Aug</h4>
-                            <p>Design Meeting</p>
-                            <p className="text-sm text-gray-500">10:15AM to 12:30PM</p>
-                        </motion.div>
-                        <motion.div className="p-4 bg-white rounded-lg shadow-md" whileHover={{scale: 1.03}}>
-                            <h4 className="text-sm font-semibold">22 Aug</h4>
-                            <p>Workshop Meeting</p>
-                            <p className="text-sm text-gray-500">9:00AM to 5:30PM</p>
-                        </motion.div>
-                        <motion.div className="p-4 bg-white rounded-lg shadow-md" whileHover={{scale: 1.03}}>
-                            <h4 className="text-sm font-semibold">28 Aug</h4>
-                            <p>Weekly Meeting</p>
-                            <p className="text-sm text-gray-500">10:30AM to 5:00PM</p>
-                        </motion.div>
-                    </div>
-                </div>
-                <div>
-                    <div className="mb-4">
-                        <h3 className="text-lg font-semibold">Calendar</h3>
-                    </div>
-                    <motion.div className="p-6 bg-white rounded-lg shadow-md" whileHover={{scale: 1.03}}>
-                        {/* Placeholder for Calendar Component */}
-                        <p className="text-center text-gray-500">Calendar Component</p>
-                    </motion.div>
-                </div>
-            </div>
+
+
         </div>
     );
 };
