@@ -1,6 +1,4 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { FaStar } from 'react-icons/fa';
 import couv from "../assets/event.jpg"
 
 const UpcomingEvents = () => {
