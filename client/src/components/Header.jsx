@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FiBell, FiSearch } from "react-icons/fi"; // Icônes via react-icons
 import avatar from "../assets/profil.png"; // Remplacez par le chemin de votre image locale
