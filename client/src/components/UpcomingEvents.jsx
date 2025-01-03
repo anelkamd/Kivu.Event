@@ -11,7 +11,6 @@ const UpcomingEvents = () => {
             description: 'Language lessons with the most popular teachers',
             category: 'Hackathon',
             date: '20 fevrier',
-            rating: 4.3,
         },
         {
             image: couv,
@@ -19,7 +18,6 @@ const UpcomingEvents = () => {
             description: 'Learn advanced math techniques',
             category: 'Conference',
             date: '15 Avril',
-            rating: 4.8,
         },
         {
             image: couv,
@@ -27,7 +25,6 @@ const UpcomingEvents = () => {
             description: 'Learn advanced math techniques',
             category: 'Formation',
             date: '02 Juillet',
-            rating: 3.3,
         },
         {
             image: couv,
@@ -35,7 +32,6 @@ const UpcomingEvents = () => {
             description: 'Learn advanced math techniques',
             category: 'Education',
             date: '15 Aout',
-            rating: 4.8,
         },
     ];
 
@@ -66,10 +62,6 @@ const UpcomingEvents = () => {
                             <h3 className="text-lg font-semibold text-gray-800">
                                 {event.name}
                             </h3>
-                            <div className="flex items-center space-x-1 text-yellow-500">
-                                <FaStar />
-                                <span className="text-sm font-medium">{event.rating}</span>
-                            </div>
                         </div>
                         <p className="text-sm text-gray-600 mb-2">{event.description}</p>
                         <div className="flex items-center text-sm text-gray-500">
