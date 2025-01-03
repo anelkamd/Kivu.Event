@@ -13,7 +13,7 @@ const Header = () => {
         >
             {/* Gauche : Titre */}
             <div className="text-xl sm:text-2xl font-bold flex items-center">
-                Dashboard kivu Event <span className="ml-2">👋</span>
+                Dashboard Kivu Event <span className="ml-2">👋</span>
             </div>
 
             {/* Droite : Recherche, Notification et Avatar */}
