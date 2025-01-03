@@ -3,6 +3,7 @@ import EventCard from "../components/EventCard.jsx";
 import Calendar from "../components/Calendar.jsx";
 import { motion } from "framer-motion";
 import UpcomingEvents from "../components/UpcomingEvents.jsx";
+import StatisticsCard from "../components/StatCard.jsx";
 
 
 const Dashboard = () => {
@@ -31,6 +32,9 @@ const Dashboard = () => {
                     <Calendar/>
                 </div>
             </div>
+            <div className="p-4">
+                <StatisticsCard/>
+            </div>
             {/* Upcoming Events Section */}
             <div className="min-h-screen bg-gray-100 p-6 font-poppins flex flex-col gap-6">
                 {/* Header Section */}
@@ -42,7 +46,7 @@ const Dashboard = () => {
                     initial={{opacity: 0, y: 20}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.7}}
-                    className="p-4"
+                    className="p-1"
                 >
                         <UpcomingEvents/>
                 </motion.div>
