@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import profil from "../assets/profil.png"
 import {
     FaHome,
     FaCalendarAlt,
     FaRegListAlt,
     FaComments,
     FaCog,
-    FaUserCircle,
 } from "react-icons/fa";
+import logo from "../assets/logo.png"
 
 const Sidebar = () => {
     const menuItems = [
@@ -23,11 +24,14 @@ const Sidebar = () => {
         <div className="h-screen bg-gray-100 flex flex-col items-center py-4 w-20 rounded-r-lg shadow-md">
             {/* Logo */}
             <motion.div
-                className="bg-black text-white rounded-full w-10 h-10 flex items-center justify-center mb-10"
+                className="w-14 h-14 rounded-full overflow-hidden mb-10"
                 whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
             >
-                <span className="font-bold text-sm">Be.run</span>
+                <img
+                    src={logo}
+                    alt="Logo"
+                    className="w-full h-full object-cover"
+                />
             </motion.div>
 
             {/* Menu Items */}
@@ -54,7 +58,7 @@ const Sidebar = () => {
                     whileHover={{ scale: 1.1 }}
                 >
                     <img
-                        src="https://via.placeholder.com/150"
+                        src={profil}
                         alt="User"
                         className="w-full h-full object-cover"
                     />
